@@ -8,17 +8,44 @@
 
 <body>
 
-	<header>
-		<img src="" alt="" />
-		<h1> Satyam Jha </h1>
-		<ul>
-			<li> Javascript </li>
-			<li> C++ </li>
-			<li> golang </li>
-		</ul>
-		<nav> hire me </nav>
-	</header>
-	
+	<!-- Header with a role of heading -->
+    <header>
+        <h1 role="heading">Satyam Jha's Portfolio</h1>
+    </header>
+
+    <!-- Navigation with a role of navigation -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content with an image and a brief description -->
+    <main>
+        <!-- Image with ARIA role img -->
+        <section id="about">
+            <img src="profile.jpg" alt="Satyam Jha's profile picture" role="img">
+            <p>Hello! I'm Satyam Jha, a full-stack developer specializing in the MERN stack. I have built several projects in web development, and I'm passionate about creating innovative solutions.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">E-commerce Web App</li>
+                <li role="listitem">Real-time Chat Application</li>
+                <li role="listitem">Netflix Clone</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer with Contact Information -->
+    <footer id="contact">
+        <p>Contact me at <a href="mailto:satyam@example.com">satyam@example.com</a></p>
+    </footer>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
